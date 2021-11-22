@@ -8,6 +8,17 @@
     android:padding="1dp"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/blackboard_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/result_textview"
+        android:contentDescription="@string/background_image_content_desc" />
+
     <!-- The first textview will be used for viewing the expression
     as it is done in other calculators. -->
 
@@ -15,7 +26,6 @@
         android:id="@+id/expression_textview"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/textview_background"
         android:gravity="bottom|right"
         android:text=""
         android:textColor="@color/text_on_text_views"
@@ -32,7 +42,6 @@
         android:id="@+id/result_textview"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/textview_background"
         android:gravity="bottom|right"
         android:text="@string/result_default_value"
         android:textColor="@color/text_on_text_views"
